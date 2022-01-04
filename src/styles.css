@@ -1,0 +1,92 @@
+/* body {
+  font-family: sans-serif;
+  background-color: aquamarine;
+} */
+
+/* .face {
+  position: absolute;
+  background-color: bisque;
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+  margin-left: 50px;
+  margin-top: 80px;
+}
+
+.eye-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 15px 0px 15px;
+}
+
+.eye {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.pupil {
+  background-color: black;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  margin: 10px 0px 10px 20px;
+} */
+
+/* body {
+  font-family: sans-serif;
+  background-color: rgb(58, 128, 240);
+  display: flex;
+  flex-direction: row;
+}
+
+.ball {
+  /* position: absolute; 
+  background-color: palevioletred;
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+  margin-left: 80px;
+  margin-top: 80px;
+} */
+
+/* body {
+  font-family: sans-serif;
+  background-color: rgb(58, 128, 240);
+} */
+
+/* .text {
+  width: 100%;
+  font-size: 60px;
+  margin-top: 200px;
+  margin-left: 200px;
+  color: white;
+} */
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(224, 144, 107);
+}
+
+.display {
+  background-color: lightcoral;
+  height: 60px;
+  width: 380px;
+  border-radius: 10px;
+  padding: 20px;
+  border: solid 20px rgb(184, 83, 83);
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.top {
+    height: 40px;
+    width: 200px;
+    margin-left: 130px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color:rgb(184, 83, 83);
+}
