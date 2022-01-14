@@ -126,7 +126,7 @@
 // console.log(x)
 
 // COMPARISON OPERATORS - we are checking when we use these operators
-let x = 20;
+// let x = 20;
 
 // Equal (with numbers and strings)
 // console.log(x == 20)
@@ -498,14 +498,69 @@ let x = 20;
 // console.log('cold Drinks: ', coldDrinksOnly)
 // display.innerHTML = drinks
 
-const display = document.querySelector('.display')
-const shoes = ['trainers', 'slippers', 'boots']
+// const display = document.querySelector('.display')
+// const shoes = ['trainers', 'slippers', 'boots']
 // code showing removing trainers and adding heels at index 0
 // shoes.splice(0,1, 'heels')
 // code showing removing boots and adding wellies at index 2
 // shoes.splice(2,2, 'wellies')
 // code showing adding sandals at index 2 - we want to remove 0 elements at index 2
-shoes.splice(2,0, 'sandals')
-display.innerHTML = shoes
+// shoes.splice(2,0, 'sandals')
+// display.innerHTML = shoes
+
+// .forEach()
+// const circles = document.querySelectorAll('.circle')
+// circles.forEach(circle => circle.style.backgroundColor = 'purple')
 
 
+// const flowers = document.querySelectorAll('.flower')
+// console.log(flowers)
+// flowers.forEach(flower => flower.style.backgroundColor = 'yellow')
+
+// const squad = ['Lucy', 'Gi', 'Mack', 'Millie', 'Ben']
+// squad.forEach(player => console.log(player + ' Sargent'))
+
+// const fruits = ['pears', 'apples', 'peaches', 'guavas', 'mangoes', 'cherries']
+// fruits.forEach(fruit => console.log(fruit))
+// fruits.forEach(fruit => console.log(fruit + ' in the bowl'))
+
+
+// .some()
+// if true for some
+// const scores = [12, 45, 35, 24, 87, 23, 11]
+// console.log(scores.some(score => score > 100))
+
+// const countries = ['America', 'Italy', 'France', 'Iran', 'Ethiopia']
+// console.log(countries.some(country => country === 'Russia'))
+
+// const rounds = Array.from(document.querySelectorAll('.circle'))
+// const didFlowerGrow = rounds.some(round => round.hasChildNodes())
+// console.log(didFlowerGrow)
+
+// .map()
+// creates a NEW array
+
+const ages2018 = [2, 6, 33, 51, 76]
+const ages2022 = ages2018.map(age => age + 4)
+console.log(ages2018)
+console.log(ages2022)
+
+const housemates2018 = [
+    {
+        person: 'Joe', 
+        age: 21
+    },
+    {
+        person: 'Bobby', 
+        age: 26
+    },
+    {
+        person: 'Mabel', 
+        age: 24
+    }
+]
+
+console.log(housemates2018)
+
+const housemates2022 = housemates2018.map(age => age + 4)
+console.log(housemates2022)
