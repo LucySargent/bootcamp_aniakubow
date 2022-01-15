@@ -463,7 +463,7 @@
 // display.innerHTML = movies
 
 // .shift()
-// removes the first element of an array (changes the array) 
+// removes the first element of an array (changes the array)
 // const display = document.querySelector('.display')
 // const movies = ['Argo', 'Sing', 'Top Gun']
 // console.log(movies)
@@ -486,7 +486,7 @@
 // actors.push('de Niro', 'Streep')
 // display.innerHTML = actors
 
-// .splice() 
+// .splice()
 // lets us remove parts of an array and/or add to an array
 // does not change existing array but produces new ones
 // splice needs 2 index parameters - the start index (item to remove) and delete count from the start. To remove water from drinks: 0,1. If adding only it would be 0,0
@@ -512,7 +512,6 @@
 // const circles = document.querySelectorAll('.circle')
 // circles.forEach(circle => circle.style.backgroundColor = 'purple')
 
-
 // const flowers = document.querySelectorAll('.flower')
 // console.log(flowers)
 // flowers.forEach(flower => flower.style.backgroundColor = 'yellow')
@@ -523,7 +522,6 @@
 // const fruits = ['pears', 'apples', 'peaches', 'guavas', 'mangoes', 'cherries']
 // fruits.forEach(fruit => console.log(fruit))
 // fruits.forEach(fruit => console.log(fruit + ' in the bowl'))
-
 
 // .some()
 // if true for some
@@ -540,27 +538,193 @@
 // .map()
 // creates a NEW array
 
-const ages2018 = [2, 6, 33, 51, 76]
-const ages2022 = ages2018.map(age => age + 4)
-console.log(ages2018)
-console.log(ages2022)
+// const ages2018 = [2, 6, 33, 51, 76]
+// const ages2022 = ages2018.map(age => age + 4)
+// console.log(ages2018)
+// console.log(ages2022)
 
-const housemates2018 = [
-    {
-        person: 'Joe', 
-        age: 21
-    },
-    {
-        person: 'Bobby', 
-        age: 26
-    },
-    {
-        person: 'Mabel', 
-        age: 24
-    }
-]
+// const housemates2018 = [
+//     {
+//         person: 'Joe',
+//         age: 21
+//     },
+//     {
+//         person: 'Bobby',
+//         age: 26
+//     },
+//     {
+//         person: 'Mabel',
+//         age: 24
+//     }
+// ]
 
-console.log(housemates2018)
+// console.log(housemates2018)
 
-const housemates2022 = housemates2018.map(age => age + 4)
-console.log(housemates2022)
+// const housemates2022 = housemates2018.map(housemate => housemate.age + 4)
+// console.log('housemates2022', housemates2022)
+
+// .filter()
+// creates a NEW array
+
+// const containers = ['boxes', 'jug', 'drawers', 'bowls', 'bag']
+// displayContainers = containers.filter(container => container.length < 5)
+// const showDisplay = document.querySelector('.circle')
+// showDisplay.innerHTML = displayContainers
+
+// const containers = [
+//         {
+//             container: 'Box',
+//             material: 'cardboard',
+//             size: 'small',
+//             quantity: 7
+//         },
+//         {
+//             container: 'jug',
+//             material: 'glass',
+//             size: 'small',
+//             quantity: 10
+//         },
+//         {
+//             container: 'drawer',
+//             material: 'wood',
+//             size: 'large',
+//             quantity: 1
+//         },
+//         {
+//             container: 'bag',
+//             material: 'leather',
+//             size: 'medium',
+//             quantity: 5
+//         }
+//     ]
+
+// const newContainers = containers.filter(container => container.quantity > 5)
+// console.log('newContainers', newContainers)
+
+// .reduce()
+// syntax to give you the total of any array of numbers
+// const scores = [3, 5, 7, 1, 3]
+
+// total = scores.reduce((accumulator, currentValue) => accumulator + currentValue)
+// console.log(total)
+// const total = scores.reduce((oldScore, score) => oldScore + score)
+// console.log(total)
+
+// .every()
+// if everything in our array matches a rule, return true
+
+// const results = [3, 5, 7, 1, 3]
+// const hasClassPassed = results.every(result => result > 0)
+// console.log(hasClassPassed)
+
+// const animals = ['cat', 'rat', 'dog', 'ant']
+// const newAnimals = animals.every(animal => animal.length === 3)
+// console.log(newAnimals)
+
+// .split()
+// divides a string into list of substrings
+
+// const sentence = 'I would like some tea'
+// const words = sentence.split(' ')
+// console.log(words)
+// console.log(words[2])
+
+// const letters = sentence.split('')
+// console.log(letters)
+
+// ARRAY WORK
+
+// use .map to convert farenheit to celcius
+// const farenheit = [23, 140, 212, 41]
+// function getCelcius() {
+//   return farenheit.map((number) => ((number - 32) * 5) / 9)
+// }
+// console.log(getCelcius())
+
+// use .map to convert inches to cm
+// const inches = [1, 4, 6, 9, 10]
+// function getCMS() {
+//   return inches.map((cm) => cm * 2.54)
+// }
+// console.log(getCMS())
+
+// convert acres to sqms
+// const acres = [1, 2.5, 5, 10]
+// function getSQMS() {
+//   return acres.map((acre) => acre * 4047)
+// }
+
+// console.log(getSQMS())
+
+// use .some() in a function that checks an array for a 'falsey' value
+// eg. checkForFalsey([11, NaN, [], {'angels'}]) => true
+
+// const values = [11, NaN, [], 'angels']
+
+// function checkForFalsey() {
+//     return values.some(value => value.length > 100)
+// }
+// console.log('checkforfalsey', checkForFalsey())
+
+// const values = [11, NaN, [], 'angels']
+
+// function checkForFalsey() {
+//     return values.some(value => value === 0)
+// }
+// console.log('checkforfalsey', checkForFalsey())
+
+// function checkForFalsey() {
+//     return values.some(value => value !== 11)
+// }
+// console.log('checkforfalsey', checkForFalsey())
+
+// !value is checking is something is false
+// function checkForFalsey() {
+//     return values.some(value => !value)
+// }
+// console.log('checkforfalsey', checkForFalsey())
+
+// using .reduce write a function that will return the total number
+// or characters in an array of strings
+// e.g getTotal(['rabbit', 'football', 'cracking']) => 22
+
+// const words = ['rabbit', 'football', 'cracking']
+// function getTotal() {
+//     return words.reduce((total, word) => total + word.length, 0)
+// }
+// console.log(getTotal())
+
+// using .every write a function that checks whether every number in
+// an array is a square number
+// e.g checkSquares([9, 16, 81]) => true
+// solution - gets the square root of a number and checks modulus is === 0 (so we know it's a full number)
+// const areas = [9, 16, 81]
+
+// function checkSquares() {
+//     return areas.every(number => Math.sqrt(number) % 1 === 0)
+// }
+// console.log(checkSquares())
+
+// using an array method, write a function that returns the string
+// elements of an array that have a given length or larger.
+// eg. getWords(['Florida', 'dog', 'phone'], 5) => ['Florida','phone']
+
+// const words = ['Florida', 'dog', 'phone', 'eagle', 'jellybeans', 'helicopter', 'yes', 'no']
+// const number = 5
+
+// function getWords() {
+//     return words.filter(word => word.length >= number)
+// }
+// console.log(getWords())
+
+// or we can do this USING PARAMETERS which makes the code reusable:
+
+function getWords(array, number) {
+    return array.filter(word => word.length >= number)
+}
+console.log(getWords(['Florida', 'dog', 'phone', 'eagle', 'jellybeans', 'helicopter', 'yes', 'no'], 5))
+console.log(getWords(['pen', 'letter', 'cheese', 'sea', 'blue'], 6))
+
+// using an array method, write a function that converts an array of cm values
+// as strings into an array of numbers.
+// eg. getValues(['23cm', '5.6cm', '1000cm']) => [23, 5.6, 1000]
