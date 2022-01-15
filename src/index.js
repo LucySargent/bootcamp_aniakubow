@@ -719,12 +719,19 @@
 
 // or we can do this USING PARAMETERS which makes the code reusable:
 
-function getWords(array, number) {
-    return array.filter(word => word.length >= number)
-}
-console.log(getWords(['Florida', 'dog', 'phone', 'eagle', 'jellybeans', 'helicopter', 'yes', 'no'], 5))
-console.log(getWords(['pen', 'letter', 'cheese', 'sea', 'blue'], 6))
+// function getWords(array, number) {
+//     return array.filter(word => word.length >= number)
+// }
+// console.log(getWords(['Florida', 'dog', 'phone', 'eagle', 'jellybeans', 'helicopter', 'yes', 'no'], 5))
+// console.log(getWords(['pen', 'letter', 'cheese', 'sea', 'blue'], 6))
 
 // using an array method, write a function that converts an array of cm values
 // as strings into an array of numbers.
 // eg. getValues(['23cm', '5.6cm', '1000cm']) => [23, 5.6, 1000]
+
+function getValues(strings) {
+    return strings.map(string=> parseFloat(string))
+}
+console.log(getValues(['23cm', '5.6cm', '1000cm', 'string']))
+console.log(getValues(['63cm', '8.99cm', '125.098cm']))
+
